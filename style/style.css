@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-height: 100vh;
+    background: whitesmoke;
+    font-family: var(--fonte1);
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+header{
+    background: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+header > p{
+    padding-bottom: 50px;
+}
+main{
+    width: 100%;
+    height: 1000px;
+}
+section{
+    padding: 10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background: whitesmoke;
+    color: black;
+}
+section.imagem{
+    background: #272727 no-repeat right center fixed;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.85);
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.45);
+    background-size: cover;
+}
+section.imagem > p{
+    display: inline-block;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+section#img01{
+    background-image: url("../images/background001.jpg");
+}
+section#img02{
+    background-image: url("../images/background002.jpg");
+}
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
+}
